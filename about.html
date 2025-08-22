@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC - Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/logosaver.css">
+    <link rel="stylesheet" href="./CSS/utilities.css">
+</head>
+
+<body id="Home">
+    <!-- HEADER -->
+    <header class="overall">
+        <nav id="navbar">
+            <!-- <div class="container"> -->
+                <h1 class="logo"><a href="index.html">DigitalColors</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+
+        <div class="content">
+            <h1>Are You Looking For</h1>
+            <div class="typewriter">
+                <span id="changing-text"></span>
+            </div>
+            <a href="contact.html" class="btn">Contact Us <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Digital Colors Section -->
+        <section id="about-2" class="icons">
+            <div class="bg-blur"></div>
+            <div class="divider"></div>
+
+            <h1 class="AbtTitle">DigitalColors</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis accusamus necessitatibus ab,
+                quasi, quaerat minus voluptatem porro ullam asperiores dicta! Incidunt iure minus, vitae maxime aperiam,
+                temporibus dicta inventore iste provident molestiae harum mollitia consectetur! Hic, omnis voluptatum.
+                Id?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel distinctio laudantium possimus illo
+                dolores
+                pariatur modi. Obcaecati vitae commodi, excepturi veritatis cupiditate assumenda quasi ea? Veniam
+                similique
+                atque quam vero?
+            </p>
+
+            <div class="divider"></div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="reason">
+            <h1 class="AbtTitle">Why Us ?</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, esse! Aspernatur quas nam ut saepe
+                laudantium, beatae architecto debitis consectetur molestiae error, officia iure iste dolor eius soluta
+                nobis
+                eaque perspiciatis eveniet vitae similique veniam sequi. Iure, aut tenetur? Rem.
+            </p>
+            <div class="divider"></div>
+        </section>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <i class="fas fa-crosshairs"></i>
+            <h3>Our Precision</h3>
+            <p>We focus sharply on delivering exactly what your brand needs to succeed.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-bullseye"></i>
+            <h3>Our Target</h3>
+            <p>We hit your audience where it matters most with effective communication.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Our Creativity</h3>
+            <p>We design unique solutions that tell your story in unforgettable ways.</p>
+        </div>
+    </section>
+            <div class="divider"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="logo-2">DigitalColors</h2>
+
+            <div class="contact-info">
+                <div>
+                    <p>Email: <a href="mailto:digitalcolors@gmail.com">digitalcolors@gmail.com</a></p>
+                    <p>Phone: +234 809 781 9994</p>
+                </div>
+                <div>
+                    <p>Address:</p>
+                    <p>1234 Creative Street, Abuja, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2025 Digital Colors. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const textArray = ["Public Relations?", "Media?", "Branding?", "Consultancy?"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 100;
+        const erasingSpeed = 50;
+        const delayBetweenWords = 3500;
+        const changingText = document.getElementById("changing-text");
+
+        function typeEffect() {
+            const currentText = textArray[textIndex];
+            if (!isDeleting) {
+                changingText.textContent = currentText.slice(0, ++charIndex);
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, delayBetweenWords);
+                    return;
+                }
+            } else {
+                changingText.textContent = currentText.slice(0, --charIndex);
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % textArray.length;
+                }
+            }
+            setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+        }
+        typeEffect();
+    </script>
+</body>
+
+</html>

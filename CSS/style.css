@@ -150,7 +150,7 @@ img {
 
 /* About */
 .WWD {
-    background-image: url("../img/blog2.jpg") no-repeat center center/cover;
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/blog2.jpg") no-repeat center center/cover;
 }
 
 .WWD h1,
@@ -232,7 +232,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/meeting.jpg") no-repeat center center;
+    background: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/meeting.jpg") no-repeat center center;
     background-size: cover;
     /* background-attachment: fixed; */
     background-position: center;
@@ -259,25 +259,25 @@ p {
 }
 
 .tng {
-    background-image: url("../img/training.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/training.jpg");
     place-content: center;
     flex: 1;
 }
 
 .sim {
-    background-image: url("../img/learning.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/learning.jpg");
     place-content: center;
     flex: 1;
 }
 
 .dmc {
-    background-image: url("../img/photoshoot.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/photoshoot.jpg");
     place-content: center;
     flex: 1;
 }
 
 .cs {
-    background-image: url("../img/desk.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/desk.jpg");
     place-content: center;
     flex: 1;
 }
@@ -329,19 +329,19 @@ p {
 }
 
 .tng::before {
-    background-image: url("../img/training.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/training.jpg");
 }
 
 .sim::before {
-    background-image: url("../img/learning.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/learning.jpg");
 }
 
 .dmc::before {
-    background-image: url("../img/photoshoot.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/photoshoot.jpg");
 }
 
 .cs::before {
-    background-image: url("../img/desk.jpg");
+    background-image: url("https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/desk.jpg");
 }
 
 /* Flex items */
@@ -472,7 +472,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: url(../img/blog2.jpg) no-repeat center center; */
+    /* background: url(https://media.githubusercontent.com/media/Jusaltt/DigitalColors/main/img/blog2.jpg) no-repeat center center; */
     background-size: cover;
     background-position: center;
     filter: blur(4px);
